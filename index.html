@@ -2,16 +2,23 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <title>NPO 団体名</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NPOの名前</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <section class="slide hero">
-    <h1>ここにいていい</h1>
-    <p>不登校の子のための、静かな相談場所</p>
+  <!-- ヒーロー（最初に見える部分） -->
+  <section class="hero">
+    <img src="logo.png" alt="NPOロゴ" class="logo">
+
+    <h1>ひとりで悩まなくていい</h1>
+    <p class="catch">
+      不登校で悩むあなたが、<br>
+      少し安心できる場所でありたい。
+    </p>
+
+    <img src="dummy-photo.jpg" alt="活動イメージ" class="hero-photo">
   </section>
 
   <section class="slide">
@@ -24,15 +31,31 @@
     <p>ここに自己紹介を書く</p>
   </section>
 
-  <section class="slide">
-    <h2>相談する</h2>
-    <p>気軽に連絡してください</p>
-    <div class="buttons">
-      <img src="line-qr.png.JPG" alt="LINE QR">
-      <img src="instagram-qr.png.JPG" alt="Instagram QR">
+  <section class="contact">
+    <h2>お問い合わせ・相談</h2>
+
+    <div class="contact-box">
+      <div class="qr">
+        <img src="line-qr.png" alt="LINE QRコード">
+        <p>LINE</p>
+      </div>
+
+      <div class="qr">
+        <img src="instagram-qr.png" alt="Instagram QRコード">
+        <p>Instagram</p>
+      </div>
+    </div>
+
+    <div class="contact-text">
+      <p>📧 メール：<br>
+        <a href="mailto:example@npo.jp">example@npo.jp</a>
+      </p>
+
+      <p>📞 電話番号：<br>
+        <span class="pending">（準備中）</span>
+      </p>
     </div>
   </section>
 
-  <script src="script.js"></script>
 </body>
 </html>
