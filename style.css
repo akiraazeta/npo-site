@@ -45,13 +45,13 @@ body {
 -------------------- */
 .slides-container {
   display: flex;                  /* 横並び */
-  width: 300%;                    /* ページ数 × 100% */
+  width: 300vw;                    /* スライド枚数 × 100vw */
   transition: transform 0.8s ease-in-out; /* 滑らかにスライド */
 }
 
 /* 各スライド */
 .slide-page {
-  width: 100%;       /* 1ページ分 */
+  width: 100vw;       /* 画面幅いっぱい */
   flex-shrink: 0;    /* 縮めない */
   text-align: center;
   padding: 50px 20px;
