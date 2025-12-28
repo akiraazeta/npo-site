@@ -1,51 +1,69 @@
 body {
   margin: 0;
-  font-family: "Noto Sans JP", sans-serif;
-  background: linear-gradient(180deg, #fef6fb, #f2f8ff);
-  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
+  color: #444;
+  line-height: 1.8;
 }
 
-.slide {
-  min-height: 100vh;
-  padding: 80px 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.slide.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
+/* ヒーロー */
 .hero {
-  background: linear-gradient(135deg, #f6b1d1, #a8d8ff);
-  color: white;
+  background: linear-gradient(180deg, #fce4ec, #e3f2fd);
+  text-align: center;
+  padding: 40px 20px 60px;
 }
 
-h1 {
-  font-size: 42px;
+.logo {
+  width: 120px;
   margin-bottom: 20px;
 }
 
-h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+.hero h1 {
+  font-size: 1.6rem;
+  margin: 10px 0;
 }
 
-p {
-  max-width: 620px;
-  line-height: 1.9;
-  font-size: 16px;
+.catch {
+  font-size: 1rem;
+  margin-bottom: 30px;
 }
 
-.buttons img {
-  width: 140px;
-  margin: 12px;
+.hero-photo {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+/* 連絡先 */
+.contact {
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.qr img {
+  width: 120px;
+  border-radius: 12px;
+}
+
+.contact-text p {
+  margin: 15px 0;
+  font-size: 0.95rem;
+}
+
+.pending {
+  color: #999;
 }
