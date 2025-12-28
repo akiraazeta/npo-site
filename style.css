@@ -78,9 +78,9 @@ h2 {
 }
 
 .slide {
-  opacity: 0;
-  transform: translateY(50px); /* 下から上にスライド */
-  transition: all 0.8s ease-out; /* 滑らかに変化 */
+  opacity: 0.1;
+  transform: translateY(50px); 
+  transition: all 0.8s ease-out; 
 }
 
 .slide.show {
