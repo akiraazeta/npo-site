@@ -5,8 +5,7 @@
   <title>NPO 団体名</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
+</head><body>
 
   <!-- ヒーロー（最初に見える部分） -->
   <section class="hero">
@@ -21,43 +20,49 @@
     <img src="dummy-photo.jpg" alt="活動イメージ" class="hero-photo">
   </section>
 
- <!-- 理念セクション -->
-<section class="理念 slide">
-  <h2>理念</h2>
-  <p>ここに理念の文章を書く</p>
-</section>
+  <!-- スライド用コンテナ -->
+  <div class="slides-container">
 
-<section class="代表 slide">
-  <h2>代表について</h2>
-  <p>代表の自己紹介文章</p>
-</section>
+    <!-- 理念スライド -->
+    <section class="slide-page">
+      <h2>理念</h2>
+      <p>ここに理念の文章を書く</p>
+    </section>
 
-</section>
-  <section class="contact">
-    <h2>お問い合わせ・相談</h2>
+    <!-- 代表スライド -->
+    <section class="slide-page">
+      <h2>代表について</h2>
+      <p>代表の自己紹介文章</p>
+    </section>
 
-    <div class="contact-box">
-      <div class="qr">
-        <img src="line-qr.png" alt="LINE QRコード">
-        <p>LINE</p>
+    <!-- お問い合わせスライド -->
+    <section class="slide-page">
+      <h2>お問い合わせ・相談</h2>
+
+      <div class="contact-box">
+        <div class="qr">
+          <img src="line-qr.png" alt="LINE QRコード">
+          <p>LINE</p>
+        </div>
+
+        <div class="qr">
+          <img src="instagram-qr.png" alt="Instagram QRコード">
+          <p>Instagram</p>
+        </div>
       </div>
 
-      <div class="qr">
-        <img src="instagram-qr.png" alt="Instagram QRコード">
-        <p>Instagram</p>
+      <div class="contact-text">
+        <p>📧 メール：<br>
+          <a href="mailto:example@npo.jp">example@npo.jp</a>
+        </p>
+
+        <p>📞 電話番号：<br>
+          <span class="pending">（準備中）</span>
+        </p>
       </div>
-    </div>
+    </section>
 
-    <div class="contact-text">
-      <p>📧 メール：<br>
-        <a href="mailto:example@npo.jp">example@npo.jp</a>
-      </p>
-
-      <p>📞 電話番号：<br>
-        <span class="pending">（準備中）</span>
-      </p>
-    </div>
-  </section>
+  </div> <!-- slides-container end -->
 
 </body>
 </html>
