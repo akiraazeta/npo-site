@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  background: linear-gradient(180deg, #fef6fb, #f2f8ff);
+  color: #333;
+}
+
+.slide {
+  min-height: 100vh;
+  padding: 80px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.slide.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero {
+  background: linear-gradient(135deg, #f6b1d1, #a8d8ff);
+  color: white;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 620px;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.buttons img {
+  width: 140px;
+  margin: 12px;
+}
