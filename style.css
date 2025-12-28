@@ -68,18 +68,3 @@ body {
   color: #999;
 }
 
-/* 理念・代表を中央揃え */
-.理念, .代表 {
-  text-align: center;       /* 見出し・文章を中央に */
-  margin: 40px 20px;        /* 上下余白を追加 */
-}
-
-/* 代表写真を丸く中央に配置 */
-.photo {
-  display: block;           /* ブロック化して中央揃え */
-  margin: 20px auto;        /* 上下余白＋左右中央 */
-  width: 160px;             /* サイズ調整 */
-  height: 160px;
-  border-radius: 50%;       /* 丸くする */
-  object-fit: cover;        /* 画像の切れを防ぐ */
-}
