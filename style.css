@@ -1,17 +1,11 @@
-/* --------------------
-   基本スタイル
--------------------- */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
   color: #444;
   line-height: 1.8;
-  overflow-x: hidden; /* 横スクロールを消す */
 }
 
-/* --------------------
-   ヒーロー
--------------------- */
+/* ヒーロー */
 .hero {
   background: linear-gradient(180deg, #fce4ec, #e3f2fd);
   text-align: center;
@@ -40,33 +34,18 @@ body {
   margin-top: 20px;
 }
 
-/* --------------------
-   スライドコンテナ
--------------------- */
-.slides-container {
-  display: flex;                  /* 横並び */
-  width: 300vw;                    /* スライド枚数 × 100vw */
-  transition: transform 0.8s ease-in-out; /* 滑らかにスライド */
-}
-
-/* 各スライド */
-.slide-page {
-  width: 100vw;       /* 画面幅いっぱい */
-  flex-shrink: 0;    /* 縮めない */
+/* 理念・代表・お問い合わせ 共通 */
+.理念, .代表, .contact {
   text-align: center;
   padding: 50px 20px;
-  box-sizing: border-box;
 }
 
-/* スライド内の見出し */
-.slide-page h2 {
+.理念 h2, .代表 h2, .contact h2 {
   font-size: 1.4rem;
   margin-bottom: 30px;
 }
 
-/* --------------------
-   お問い合わせ
--------------------- */
+/* お問い合わせ内 */
 .contact-box {
   display: flex;
   justify-content: center;
@@ -87,12 +66,4 @@ body {
 
 .pending {
   color: #999;
-}
-
-/* --------------------
-   スライド内テキスト中央揃え
--------------------- */
-.slide-page p {
-  font-size: 1rem;
-  margin: 15px 0;
 }
