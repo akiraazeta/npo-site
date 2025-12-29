@@ -348,3 +348,7 @@ section {
 .contact-mini a:hover {
   text-decoration: underline;
 }
+
+.hero-header {
+  align-items: center;
+}
