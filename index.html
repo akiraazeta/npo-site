@@ -2,61 +2,166 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>NPO 団体名</title>
+  <title>ひとりで悩まなくていい｜NPO 団体名</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta -->
+  <meta name="description" content="不登校の経験を持つ17歳が、悩む小・中学生や保護者の話を聞きます。ひとりで悩まなくていい場所を目指して活動しています。">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ヒーロー -->
-  <section class="hero">
-    <img src="logo.png" alt="NPOロゴ" class="logo">
-    <h1>ひとりで悩まなくていい</h1>
-    <p class="catch">
-      不登校で悩むあなたが、<br>
-      少し安心できる場所でありたい。
-    </p>
-    <img src="dummy-photo.jpg" alt="活動イメージ" class="hero-photo">
-  </section>
+  <main>
 
-  <!-- 理念 -->
-  <section class="理念">
-    <h2>理念</h2>
-    <p>ここに理念の文章を書く</p>
-  </section>
+    <!-- =====================
+         HERO
+    ====================== -->
+    <section class="hero js-fade">
+      <div class="hero-inner">
 
-  <!-- 代表 -->
-  <section class="代表">
-    <h2>代表について</h2>
-    <p>代表の自己紹介文章</p>
-  </section>
+        <img src="logo.png" alt="NPOロゴ" class="logo">
 
-  <!-- お問い合わせ -->
-  <section class="contact">
-    <h2>お問い合わせ・相談</h2>
+        <h1 class="hero-title">
+          ひとりで悩まなくていい
+        </h1>
 
-    <div class="contact-box">
-      <div class="qr">
-        <img src="line-qr.png" alt="LINE QRコード">
-        <p>LINE</p>
+        <p class="hero-lead">
+          言葉にならなくても大丈夫。<br>
+          同じ経験をした先輩が、あなたの話を聞きます。
+        </p>
+
+        <a href="#contact" class="btn-primary">
+          LINEで相談する
+        </a>
+
       </div>
+    </section>
 
-      <div class="qr">
-        <img src="instagram-qr.png" alt="Instagram QRコード">
-        <p>Instagram</p>
+    <!-- =====================
+         EMPATHY
+    ====================== -->
+    <section class="empathy js-fade">
+      <div class="section-inner">
+
+        <p>
+          朝になると、<br>
+          学校のことを考えてしまう。
+        </p>
+
+        <p>
+          行かなきゃと思うほど、<br>
+          体が動かなくなる。
+        </p>
+
+        <p>
+          誰かに話したいけど、<br>
+          どう言えばいいかわからない。
+        </p>
+
       </div>
-    </div>
+    </section>
 
-    <div class="contact-text">
-      <p>📧 メール：<br>
-        <a href="mailto:example@npo.jp">example@npo.jp</a>
-      </p>
+    <!-- =====================
+         SAFETY
+    ====================== -->
+    <section class="safety js-fade">
+      <div class="section-inner">
 
-      <p>📞 電話番号：<br>
-        <span class="pending">（準備中）</span>
-      </p>
-    </div>
-  </section>
+        <h2 class="section-title">
+          ここは、安心して話せる場所です
+        </h2>
+
+        <ul class="safety-list">
+          <li>匿名で相談できます</li>
+          <li>無理に話さなくて大丈夫です</li>
+          <li>すぐに答えられないこともあります</li>
+          <li>専門家ではありませんが、真剣に話を聞きます</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- =====================
+         ABOUT
+    ====================== -->
+    <section class="about js-fade">
+      <div class="section-inner about-inner">
+
+        <div class="about-text">
+          <h2 class="section-title">
+            この活動を始めた理由
+          </h2>
+
+          <p>
+            通信制高校に通い、不登校を経験した自分は、<br>
+            「あのとき、話を聞いてくれる人がいたら」と<br>
+            何度も思いました。
+          </p>
+
+          <p>
+            同じように悩んでいる子が、<br>
+            少しでも安心できる場所を作りたい。<br>
+            そんな思いから、この活動を始めました。
+          </p>
+        </div>
+
+        <div class="about-image">
+          <img src="representative.jpg" alt="代表の写真">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================
+         CONTACT
+    ====================== -->
+    <section class="contact js-fade" id="contact">
+      <div class="section-inner">
+
+        <h2 class="section-title">
+          相談・お問い合わせ
+        </h2>
+
+        <p class="contact-lead">
+          どんな内容でも構いません。<br>
+          気軽にご連絡ください。
+        </p>
+
+        <div class="contact-methods">
+
+          <a href="#" class="contact-card">
+            <img src="line-qr.png" alt="LINE QRコード">
+            <span>LINEで相談</span>
+          </a>
+
+          <a href="#" class="contact-card">
+            <img src="instagram-qr.png" alt="Instagram QRコード">
+            <span>Instagram</span>
+          </a>
+
+        </div>
+
+        <div class="contact-sub">
+          <p>
+            メール：<br>
+            <a href="mailto:example@npo.jp">example@npo.jp</a>
+          </p>
+
+          <p>
+            電話番号：<br>
+            <span class="pending">準備中</span>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 
 </body>
 </html>
