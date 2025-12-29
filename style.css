@@ -1,69 +1,270 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
-  color: #444;
-  line-height: 1.8;
+/* =====================
+   Base
+===================== */
+
+:root {
+  --bg-base: #fafaf7;
+  --bg-accent: #f6efe8;
+  --color-main: #444;
+  --color-sub: #6b7280;
+  --color-primary: #e6a57e;
+  --color-primary-hover: #d8926a;
+  --border-soft: #e5e7eb;
 }
 
-/* ヒーロー */
-.hero {
-  background: linear-gradient(180deg, #fce4ec, #e3f2fd);
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
+  color: var(--color-main);
+  background: var(--bg-base);
+  line-height: 1.9;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =====================
+   Layout
+===================== */
+
+section {
+  padding: 96px 20px;
+}
+
+.section-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 32px;
   text-align: center;
-  padding: 40px 20px 60px;
+}
+
+/* =====================
+   Hero
+===================== */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    #f6efe8 0%,
+    #fafaf7 60%
+  );
+}
+
+.hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .logo {
   width: 120px;
-  margin-bottom: 20px;
+  margin: 0 auto 24px;
 }
 
-.hero h1 {
-  font-size: 1.6rem;
-  margin: 10px 0;
+.hero-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
 }
 
-.catch {
-  font-size: 1rem;
-  margin-bottom: 30px;
+.hero-lead {
+  font-size: 1.05rem;
+  color: var(--color-sub);
+  margin-bottom: 40px;
 }
 
-.hero-photo {
-  width: 90%;
-  max-width: 500px;
-  border-radius: 20px;
-  margin-top: 20px;
+/* CTA Button */
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px 32px;
+  background: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
 }
 
-/* 理念・代表・お問い合わせ 共通 */
-.理念, .代表, .contact {
+.btn-primary:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* =====================
+   Empathy
+===================== */
+
+.empathy {
+  background: #fff;
+}
+
+.empathy p {
+  font-size: 1.05rem;
+  max-width: 640px;
+  margin: 0 auto 24px;
   text-align: center;
-  padding: 50px 20px;
 }
 
-.理念 h2, .代表 h2, .contact h2 {
-  font-size: 1.4rem;
-  margin-bottom: 30px;
+/* =====================
+   Safety
+===================== */
+
+.safety {
+  background: var(--bg-accent);
 }
 
-/* お問い合わせ内 */
-.contact-box {
+.safety-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 520px;
+}
+
+.safety-list li {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  border: 1px solid var(--border-soft);
+}
+
+/* =====================
+   About
+===================== */
+
+.about-inner {
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 30px;
+  gap: 48px;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-.qr img {
+.about-text {
+  flex: 1 1 320px;
+}
+
+.about-text p {
+  margin-bottom: 24px;
+}
+
+.about-image {
+  flex: 1 1 240px;
+}
+
+.about-image img {
+  border-radius: 24px;
+}
+
+/* =====================
+   Contact
+===================== */
+
+.contact {
+  background: #fff;
+}
+
+.contact-lead {
+  text-align: center;
+  margin-bottom: 48px;
+  color: var(--color-sub);
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  text-decoration: none;
+  color: var(--color-main);
+  border: 1px solid var(--border-soft);
+  border-radius: 20px;
+  padding: 24px;
+  width: 200px;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.contact-card img {
   width: 120px;
+  margin: 0 auto 12px;
   border-radius: 12px;
 }
 
-.contact-text p {
-  margin: 15px 0;
-  font-size: 0.95rem;
+.contact-card span {
+  font-size: 0.9rem;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-sub {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.contact-sub p {
+  margin-bottom: 16px;
 }
 
 .pending {
   color: #999;
+}
+
+/* =====================
+   Fade-in (JS用)
+===================== */
+
+.js-fade {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.js-fade.is-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =====================
+   Responsive
+===================== */
+
+@media (max-width: 768px) {
+
+  section {
+    padding: 72px 20px;
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .about-inner {
+    gap: 32px;
+  }
+
 }
