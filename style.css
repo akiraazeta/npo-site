@@ -90,7 +90,7 @@ section {
 }
 
 .org-name {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.05em;
 }
@@ -101,7 +101,7 @@ section {
 }
 
 .hero-title {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 16px;
 }
