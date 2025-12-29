@@ -75,6 +75,31 @@ section {
   margin: 0 auto 24px;
 }
 
+/* Hero header (logo + org name) */
+
+.hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.hero-org {
+  text-align: left;
+}
+
+.org-name {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.org-type {
+  font-size: 0.75rem;
+  color: var(--color-sub);
+}
+
 .hero-title {
   font-size: 2rem;
   font-weight: 600;
@@ -265,6 +290,16 @@ section {
 
   .about-inner {
     gap: 32px;
+  }
+
+  /* Hero header (SP) */
+  .hero-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .hero-org {
+    text-align: center;
   }
 
 }
