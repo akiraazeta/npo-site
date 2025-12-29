@@ -79,7 +79,7 @@ section {
 
 .hero-header {
   display: flex;
-  align-items: center;
+  align-items: column;
   justify-content: center;
   gap: 4px;
   margin-bottom: 32px;
