@@ -81,7 +81,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 4px;
   margin-bottom: 32px;
 }
 
@@ -101,7 +101,7 @@ section {
 }
 
 .hero-title {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 16px;
 }
