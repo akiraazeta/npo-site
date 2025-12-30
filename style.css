@@ -114,21 +114,6 @@ section {
   font-size: 1.05rem;
   color: var(--color-sub);
 }
-
-@media (max-width: 768px) {
-  .org-name {
-    font-size: 1.6rem; 
-  }
-
-  .hero-title {
-    font-size: 1rem;   
-  }
-
-  .hero-lead {
-    font-size: 0.9rem;
-  }
-}
-
 /* CTA Button */
 
 .btn-primary {
@@ -302,7 +287,7 @@ section {
   }
 
   .hero-title {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 
   .about-inner {
@@ -365,11 +350,4 @@ section {
 
 .contact-mini a:hover {
   text-decoration: underline;
-}
-
-.hero-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
 }
