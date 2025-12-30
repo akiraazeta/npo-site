@@ -110,14 +110,13 @@ section {
   margin-bottom: 16px;
 }
 
-/* スマホ専用（768px以下） */
 @media (max-width: 768px) {
   .org-name {
-    font-size: 1.6rem; /* 固定値で大きめに */
+    font-size: clamp(1.4rem, 8vw, 1.8rem);
   }
 
   .hero-title {
-    font-size: 1.2rem; /* 固定値で少し小さめに */
+    font-size: clamp(1rem, 6vw, 1.2rem);
   }
 }
 
