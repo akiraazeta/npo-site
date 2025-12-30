@@ -112,11 +112,15 @@ section {
 
 @media (max-width: 768px) {
   .org-name {
-    font-size: clamp(1.4rem, 8vw, 1.8rem);
+    font-size: 1.6rem; /* 少し大きめ */
   }
 
   .hero-title {
-    font-size: clamp(0.9rem, 5vw, 1.1rem);
+    font-size: 1.1rem; /* ちょっと小さめ */
+  }
+
+  .hero-lead {
+    font-size: 1rem; /* ほぼそのまま */
   }
 }
 
