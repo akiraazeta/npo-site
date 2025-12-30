@@ -3,13 +3,13 @@
 ===================== */
 
 :root {
-  --bg-base: #fbfaf8;
-  --bg-accent: #f7e4de;
+  --bg-base: #fcf4f3;
+  --bg-accent: #f4d4cf;
   --color-main: #444;
   --color-sub: #6b7280;
-  --color-primary: #f4b2a7;        
-  --color-primary-hover: #ea9f93;
-  --border-soft: #ead7d0;
+  --color-primary: #ee8f86;
+  --color-primary-hover: #e07b72;
+  --border-soft: #e8c3bd;
 }
 
 * {
