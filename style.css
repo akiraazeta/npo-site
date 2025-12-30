@@ -111,10 +111,10 @@ section {
 }
 
 .hero-lead {
-  font-size: 1.05rem;
-  color: var(--color-sub);
-  margin-bottom: 40px;
-}
+    font-size: 0.7rem !important;
+    color: red;
+  }
+
 
 @media (max-width: 768px) {
   .org-name {
