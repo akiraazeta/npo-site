@@ -3,12 +3,12 @@
 ===================== */
 
 :root {
-  --bg-base: #fafaf7;
-  --bg-accent: #f6efe8;
+  --bg-base: #f9fafb;        
+  --bg-accent: #f1f5f9;     
   --color-main: #444;
   --color-sub: #6b7280;
-  --color-primary: #e6a57e;
-  --color-primary-hover: #d8926a;
+  --color-primary: #f2a3a3;        
+  --color-primary-hover: #e88f8f;  
   --border-soft: #e5e7eb;
 }
 
