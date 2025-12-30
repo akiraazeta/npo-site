@@ -99,7 +99,7 @@ section {
 }
 
 .org-name {
-  font-size: clamp(1.4rem, 5vw, 2rem); 
+  font-size: 2rem;   
   font-weight: 600;
   letter-spacing: 0.05em;
 }
@@ -108,6 +108,12 @@ section {
   font-size: 1.15rem;   
   font-weight: 600;
   margin-bottom: 16px;
+}
+
+.hero-lead {
+  font-size: 1.05rem;
+  color: var(--color-sub);
+  margin-bottom: 40px;
 }
 
 @media (max-width: 768px) {
@@ -122,12 +128,6 @@ section {
   .hero-lead {
     font-size: 0.95rem;
   }
-}
-
-.hero-lead {
-  font-size: 1.05rem;
-  color: var(--color-sub);
-  margin-bottom: 40px;
 }
 
 /* CTA Button */
