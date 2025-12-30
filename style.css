@@ -87,7 +87,8 @@ section {
 
 .hero-header {
   display: flex;
-  align-items: column;
+  flex-direction: column; 
+  align-items: center;     
   justify-content: center;
   gap: 4px;
   margin-bottom: 32px;
@@ -101,11 +102,6 @@ section {
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.05em;
-}
-
-.org-type {
-  font-size: 0.75rem;
-  color: var(--color-sub);
 }
 
 .hero-title {
