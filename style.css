@@ -116,7 +116,7 @@ section {
   }
 
   .hero-title {
-    font-size: clamp(1rem, 6vw, 1.2rem);
+    font-size: clamp(0.9rem, 5vw, 1.1rem);
   }
 }
 
