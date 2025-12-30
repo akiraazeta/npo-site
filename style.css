@@ -3,13 +3,14 @@
 ===================== */
 
 :root {
-  --bg-base: #f9fafb;        
-  --bg-accent: #f1f5f9;     
+  --bg-base: #fafaf7;          
+  --bg-accent: #f7ece8;        
   --color-main: #444;
   --color-sub: #6b7280;
-  --color-primary: #f2a3a3;        
-  --color-primary-hover: #e88f8f;  
-  --border-soft: #e5e7eb;
+  --color-primary: #f2a1a8;          
+  --color-primary-hover: #e88f96;    
+  --color-soft: #f4d6d9;        
+  --border-soft: #e6ddd8;
 }
 
 * {
