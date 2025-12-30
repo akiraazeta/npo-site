@@ -111,10 +111,9 @@ section {
 }
 
 .hero-lead {
-    font-size: 0.7rem !important;
-    color: red;
-  }
-
+  font-size: 1.05rem;
+  color: var(--color-sub);
+}
 
 @media (max-width: 768px) {
   .org-name {
@@ -126,7 +125,7 @@ section {
   }
 
   .hero-lead {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 }
 
