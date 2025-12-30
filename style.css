@@ -3,16 +3,13 @@
 ===================== */
 
 :root {
-  --bg-base: #fdf7f6;        /* ほぼ白だけどピンク */
-  --bg-accent: #f6dede;     /* セクション背景 */
-
+  --bg-base: #fcf4f3;
+  --bg-accent: #f4d4cf;
   --color-main: #444;
   --color-sub: #6b7280;
-
-  --color-primary: #f2a7a0; /* ボタン・強調 */
-  --color-primary-hover: #e59088;
-
-  --border-soft: #efd0cc;
+  --color-primary: #ee8f86;
+  --color-primary-hover: #e07b72;
+  --border-soft: #e8c3bd;
 }
 
 * {
