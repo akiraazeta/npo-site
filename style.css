@@ -3,14 +3,16 @@
 ===================== */
 
 :root {
-  --bg-base: #fafaf7;          
-  --bg-accent: #f7ece8;        
+  --bg-base: #fafaf7;
+  --bg-accent: #f4ebe7;
+
   --color-main: #444;
   --color-sub: #6b7280;
-  --color-primary: #f2a1a8;          
-  --color-primary-hover: #e88f96;    
-  --color-soft: #f4d6d9;        
-  --border-soft: #e6ddd8;
+
+  --color-primary: #e9a3a8;        /* くすみローズ */
+  --color-primary-hover: #de8f95;
+
+  --border-soft: #e5d8d3;
 }
 
 * {
