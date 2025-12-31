@@ -351,3 +351,73 @@ section {
 .contact-mini a:hover {
   text-decoration: underline;
 }
+
+/* =====================
+   Site Navigation
+===================== */
+
+.site-nav {
+  background: #fff;
+}
+
+.site-nav-items {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.site-nav-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  text-decoration: none;
+  color: var(--color-main);
+
+  padding: 20px;
+  border: 1px solid var(--border-soft);
+  border-radius: 20px;
+  width: 160px;
+  background: #fff;
+
+  transition: all 0.3s ease;
+}
+
+.site-nav-card img {
+  width: 48px;
+  height: 48px;
+}
+
+.site-nav-card span {
+  font-size: 0.9rem;
+}
+
+.site-nav-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* スマホ用 */
+@media (max-width: 768px) {
+
+  .site-nav-items {
+    gap: 16px;
+  }
+
+  .site-nav-card {
+    width: auto;
+    padding: 12px;
+    border: none;
+  }
+
+  .site-nav-card span {
+    font-size: 0.75rem;
+  }
+
+  .site-nav-card img {
+    width: 40px;
+    height: 40px;
+  }
+}
