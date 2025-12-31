@@ -75,3 +75,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+/* =====================
+   Menu Toggle
+===================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector('.menu-toggle');
+  const panel = document.querySelector('.menu-panel');
+
+  if (!toggle || !panel) return;
+
+  toggle.addEventListener('click', () => {
+    const isOpen = panel.classList.toggle('is-open');
+
+    // ☰ ⇄ ✕ 切り替え
+    toggle.textContent = isOpen ? '✕' : '☰';
+  });
+});
