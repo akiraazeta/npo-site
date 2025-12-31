@@ -1,36 +1,4 @@
 /* =====================
-   Color variables
-===================== */
-
-:root {
-  --bg-base: #fcf4f3;
-  --bg-accent: #f4d4cf;
-  --color-main: #444;
-  --color-sub: #6b7280;
-  --color-primary: #ee8f86;
-  --color-primary-hover: #e07b72;
-  --border-soft: #e8c3bd;
-}
-
-/* =====================
-   Base
-===================== */
-
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  color: var(--color-main);
-  background: var(--bg-base);
-  line-height: 1.8;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-  border-radius: 12px;
-}
-
-/* =====================
    Page header
 ===================== */
 
@@ -60,14 +28,6 @@ img {
   background: var(--bg-accent);
 }
 
-.about-inner {
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 48px;
-}
-
 .about-inner.single {
   justify-content: center;
 }
@@ -76,36 +36,15 @@ img {
   flex-direction: row-reverse;
 }
 
-.about-text {
-  flex: 1;
-}
-
 .about-text h2 {
   font-size: 1.4rem;
   margin-bottom: 16px;
-}
-
-.about-text p {
-  color: var(--color-main);
 }
 
 .profile-name {
   font-size: 0.9rem;
   color: var(--color-sub);
   margin-bottom: 16px;
-}
-
-/* =====================
-   Images
-===================== */
-
-.about-image {
-  flex: 1;
-}
-
-.about-image.profile img {
-  max-width: 320px;
-  margin: 0 auto;
 }
 
 /* =====================
@@ -118,16 +57,7 @@ img {
     padding: 72px 20px 48px;
   }
 
-  .about-inner {
-    flex-direction: column;
-    gap: 32px;
-  }
-
   .about-inner.reverse {
     flex-direction: column;
-  }
-
-  .about-image.profile img {
-    max-width: 240px;
   }
 }
