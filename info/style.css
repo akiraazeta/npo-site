@@ -1,1 +1,66 @@
+:root {
+  --bg-base: #fcf4f3;
+  --bg-accent: #f4d4cf;
+  --color-main: #444;
+  --color-sub: #6b7280;
+  --color-primary: #ee8f86;
+  --color-primary-hover: #e07b72;
+  --border-soft: #e8c3bd;
+}
 
+body {
+  background: var(--bg-base);
+  color: var(--color-main);
+  font-family: system-ui, sans-serif;
+}
+
+.info {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.info h1 {
+  margin-bottom: 24px;
+}
+
+/* カード */
+.info-card {
+  background: #fff;
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+/* summary */
+.info-card summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.info-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.info-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-title {
+  font-weight: 600;
+}
+
+.info-date {
+  font-size: 0.8rem;
+  color: var(--color-sub);
+}
+
+/* 中身 */
+.info-body {
+  margin-top: 16px;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
