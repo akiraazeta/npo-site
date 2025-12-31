@@ -89,6 +89,12 @@ img {
   color: var(--color-main);
 }
 
+.profile-name {
+  font-size: 0.9rem;
+  color: var(--color-sub);
+  margin-bottom: 16px;
+}
+
 /* =====================
    Images
 ===================== */
