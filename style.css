@@ -404,12 +404,15 @@ section {
 
   .site-nav-items {
     gap: 16px;
+    justify-content: space-between; 
   }
 
   .site-nav-card {
-    width: auto;
+    width: 30%; 
     padding: 12px;
     border: none;
+    box-sizing: border-box; 
+    text-align: center; 
   }
 
   .site-nav-card span {
