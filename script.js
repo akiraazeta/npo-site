@@ -94,3 +94,34 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.textContent = isOpen ? '✕' : '☰';
   });
 });
+
+
+/* =====================
+   Info Slide Toggle
+===================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".info-card");
+
+  cards.forEach(card => {
+    const button = card.querySelector(".info-summary");
+    const body = card.querySelector(".info-body");
+
+    if (!button || !body) return;
+
+    button.addEventListener("click", () => {
+      const isOpen = card.classList.contains("is-open");
+
+      if (isOpen) {
+        body.style.height = body.scrollHeight + "px";
+        requestAnimationFrame(() => {
+          body.style.height = "0";
+        });
+        card.classList.remove("is-open");
+      } else {
+        body.style.height = body.scrollHeight + "px";
+        card.classList.add("is-open");
+      }
+    });
+  });
+});
