@@ -46,6 +46,15 @@
   width: 100%;
   text-align: left;
   cursor: pointer;
+
+  /* 追加 */
+  color: inherit;
+  font-family: inherit;
+}
+
+/* 念のため中の要素も */
+.info-summary * {
+  color: inherit;
 }
 
 .info-body {
