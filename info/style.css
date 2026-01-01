@@ -48,3 +48,19 @@
   line-height: 1.8;
   font-size: 0.95rem;
 }
+
+/* 開閉アニメーション */
+.info-body {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 
+    max-height 0.4s ease,
+    opacity 0.3s ease;
+}
+
+/* detailsが開いたとき */
+.info-card[open] .info-body {
+  max-height: 500px; /* 十分大きければOK */
+  opacity: 1;
+}
