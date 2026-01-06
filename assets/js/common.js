@@ -63,8 +63,10 @@ document.addEventListener("DOMContentLoaded", () => {
   links.forEach(link => {
     link.addEventListener("click", e => {
       const targetId = link.getAttribute("href");
-      const target = document.querySelector(targetId);
 
+      if (!targetId || targetId === "#") return;
+
+      const target = document.querySelector(targetId);
       if (!target) return;
 
       e.preventDefault();
@@ -76,7 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
 
 /* =====================
    Menu Toggle
