@@ -5,26 +5,27 @@
 document.addEventListener("DOMContentLoaded", () => {
   const fadeElements = document.querySelectorAll(".js-fade");
 
-  const options = {
-    root: null,
-    rootMargin: "0px 0px -10% 0px",
-    threshold: 0.2
-  };
+  // IntersectionObserver 非対応環境対策
+  if (!("IntersectionObserver" in window)) {
+    fadeElements.forEach(el => {
+      el.classList.add("is-show");
+    });
+    return;
+  }
 
-  const observer = new IntersectionObserver((entries, observer) => {
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("is-show");
         observer.unobserve(entry.target);
       }
     });
-  }, options);
-
-  fadeElements.forEach(el => {
-    observer.observe(el);
+  }, {
+    threshold: 0.2
   });
-});
 
+  fadeElements.forEach(el => observer.observe(el));
+});
 
 /* =====================
    Hero Text Stagger
