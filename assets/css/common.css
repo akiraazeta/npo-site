@@ -155,3 +155,60 @@ section {
     height: 40px;
   }
 }
+
+/* =====================
+   Floating Menu
+===================== */
+
+.floating-menu {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+}
+
+/* ボタン */
+.menu-toggle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* メニュー */
+.menu-panel {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background: #fff;
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 12px;
+  display: none;
+  min-width: 180px;
+}
+
+/* 表示用 */
+.menu-panel.is-open {
+  display: block;
+}
+
+/* メニュー項目 */
+.menu-panel a {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: var(--color-main);
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
+.menu-panel a:hover {
+  background: var(--bg-accent);
+}
+
