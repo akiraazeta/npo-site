@@ -31,27 +31,26 @@ document.addEventListener("DOMContentLoaded", () => {
    Hero Text Stagger
 ===================== */
 
-document.addEventListener("DOMContentLoaded", () => {
-  const hero = document.querySelector(".hero");
-  if (!hero) return;
+// document.addEventListener("DOMContentLoaded", () => {
+//   const hero = document.querySelector(".hero");
+//   if (!hero) return;
 
-  const targets = hero.querySelectorAll(
-    ".logo, .hero-title, .hero-lead, .btn-primary"
-  );
+//   const targets = hero.querySelectorAll(
+//     ".logo, .hero-title, .hero-lead, .btn-primary"
+//   );
 
-  targets.forEach((el, index) => {
-    el.style.opacity = "0";
-    el.style.transform = "translateY(16px)";
-    el.style.transition = "opacity 0.8s ease, transform 0.8s ease";
-    el.style.transitionDelay = `${index * 0.25}s`;
+//   targets.forEach((el, index) => {
+//     el.style.opacity = "0";
+//     el.style.transform = "translateY(16px)";
+//     el.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+//     el.style.transitionDelay = `${index * 0.25}s`;
 
-    requestAnimationFrame(() => {
-      el.style.opacity = "1";
-      el.style.transform = "translateY(0)";
-    });
-  });
-});
-
+//     requestAnimationFrame(() => {
+//       el.style.opacity = "1";
+//       el.style.transform = "translateY(0)";
+//     });
+//   });
+// });
 
 /* =====================
    Smooth Scroll (CTA)
