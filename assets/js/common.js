@@ -90,3 +90,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+/* =====================
+   Header Scroll
+===================== */
+
+const header = document.querySelector('.site-header');
+
+if (header) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      header.classList.add('is-scrolled');
+    } else {
+      header.classList.remove('is-scrolled');
+    }
+  });
+}
