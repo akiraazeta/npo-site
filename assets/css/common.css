@@ -229,7 +229,7 @@ section {
 
   display: flex;
   flex-direction: column;   
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
 
   transition:
@@ -316,4 +316,9 @@ section {
 
 .site-header.is-scrolled .header-name {
   font-size: 12px;
+}
+
+.site-header:not(.is-scrolled) .header-nav {
+  width: 100%;
+  justify-content: space-between;
 }
