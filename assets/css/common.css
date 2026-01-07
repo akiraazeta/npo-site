@@ -265,10 +265,15 @@ section {
 }
 
 .header-nav {
-  margin-top: 12px;
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
+
+  transform: translateY(24px);
+  opacity: 1;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .header-nav a {
@@ -296,8 +301,7 @@ section {
 }
 
 .site-header.is-scrolled .header-nav {
-  margin-top: 0;
-  margin-left: auto;
+  transform: translateY(0);
 }
 
 .site-header.is-scrolled .header-inner {
@@ -321,4 +325,13 @@ section {
 .site-header:not(.is-scrolled) .header-nav {
   width: 100%;
   justify-content: space-between;
+}
+
+.header-brand {
+  margin: 0 auto;
+  transition: margin 0.3s ease;
+}
+
+.site-header.is-scrolled .header-brand {
+  margin: 0;
 }
