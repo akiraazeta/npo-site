@@ -212,7 +212,10 @@ section {
   background: var(--bg-accent);
 }
 
-/* ヘッダー */
+/* =====================
+   ヘッダー
+===================== */
+
 .site-header {
   width: 100%;
   background: #fff;
