@@ -61,3 +61,34 @@
     flex-direction: column;
   }
 }
+
+/* =====================
+   About Images
+===================== */
+
+.about-image img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* =====================
+   About Layout
+===================== */
+
+.about-inner {
+  align-items: center;
+  gap: 32px;
+}
+
+/* =====================
+   Responsive (About)
+===================== */
+
+@media (max-width: 768px) {
+  .about-inner {
+    flex-direction: column;
+    text-align: left;
+  }
+}
