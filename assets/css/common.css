@@ -314,26 +314,36 @@ section {
 .mobile-menu {
   position: fixed;
   inset: 0;
-  background: #fff;
-  display: none;
-  z-index: 999;
-  justify-content: center;
+  background: var(--bg-base);
+  display: flex;
   align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 100;
 }
 
 .mobile-menu.is-open {
-  display: flex;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .mobile-menu-nav {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 36px;
   text-align: center;
 }
 
 .mobile-menu-nav a {
-  font-size: 20px;
+  font-size: 22px;
+  letter-spacing: 0.08em;
   text-decoration: none;
-  color: #333;
+  color: var(--color-main);
+  transition: color 0.3s ease;
+}
+
+.mobile-menu-nav a:hover {
+  color: var(--color-primary);
 }
