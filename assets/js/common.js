@@ -59,19 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* =====================
-     Menu Toggle
-  ===================== */
-
-  const toggle = document.querySelector('.menu-toggle');
-  const panel = document.querySelector('.menu-panel');
-
-  if (toggle && panel) {
-    toggle.addEventListener('click', () => {
-      const isOpen = panel.classList.toggle('is-open');
-      toggle.textContent = isOpen ? '✕' : '☰';
-    });
-  }
 
   /* =====================
      Info Slide Toggle
