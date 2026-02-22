@@ -343,6 +343,12 @@ section {
   margin: 0;
 }
 
+.site-header.is-scrolled .header-text {
+  flex-direction: row;
+  align-items: baseline;
+  gap: 6px;
+}
+
 /* =====================
    Header Navigation (Normal)
 ===================== */
