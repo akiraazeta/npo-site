@@ -267,11 +267,6 @@ section {
   font-weight: bold;
 }
 
-.header-nav {
-  display: flex;
-  gap: 16px;
-}
-
 .header-nav a {
   text-decoration: none;
   color: #333;
