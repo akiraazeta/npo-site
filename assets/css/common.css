@@ -271,11 +271,17 @@ section {
   border: none;
   font-size: 26px;
   cursor: pointer;
-   color: #333;
+  color: var(--color-main);
+  transition: transform 0.3s ease;
+  z-index: 200;
 }
 
 .hamburger:focus {
   outline: none;
+}
+
+.hamburger.is-active {
+  transform: rotate(90deg);
 }
 
 @media (max-width: 768px) {
