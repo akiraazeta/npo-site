@@ -230,7 +230,7 @@ section {
   display: flex;
   flex-direction: column;   
   align-items: center;
-  gap: 12px;
+  gap: 6px;
 
   transition:
     flex-direction 0.3s ease,
@@ -348,7 +348,7 @@ section {
 .header-nav {
   width: 100%;
   max-width: 960px;
-  margin: 32px auto 0;
+  margin: 16px auto 0;
 
   display: flex;
   gap: 12px;
