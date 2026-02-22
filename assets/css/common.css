@@ -225,17 +225,13 @@ section {
 .header-inner {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 12px 16px;
 
   display: flex;
-  flex-direction: column;   
+  flex-direction: row;
   align-items: center;
-  gap: 6px;
-
-  transition:
-    flex-direction 0.3s ease,
-    align-items 0.3s ease,
-    gap 0.3s ease;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .header-brand {
@@ -245,13 +241,15 @@ section {
 }
 
 .header-logo {
-  width: 48px;
+  width: 36px;
   height: auto;
 }
 
 .header-text {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 6px;
 }
 
 .header-name {
@@ -261,20 +259,13 @@ section {
 }
 
 .header-title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .header-nav {
   display: flex;
   gap: 16px;
-
-  transform: translateY(24px);
-  opacity: 0;
-
-  transition:
-    transform 0.3s ease,
-    opacity 0.3s ease;
 }
 
 .header-nav a {
