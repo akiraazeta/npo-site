@@ -76,5 +76,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  /* =====================
+   Mobile Menu Toggle
+===================== */
+
+const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+if (hamburger && mobileMenu) {
+  hamburger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("is-open");
+    hamburger.textContent =
+      mobileMenu.classList.contains("is-open") ? "✕" : "☰";
+  });
+}
+
 });
 
