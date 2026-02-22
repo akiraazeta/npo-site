@@ -85,9 +85,11 @@ const mobileMenu = document.querySelector(".mobile-menu");
 
 if (hamburger && mobileMenu) {
   hamburger.addEventListener("click", () => {
-    mobileMenu.classList.toggle("is-open");
-   hamburger.classList.toggle("is-active");  });
+    const isOpen = mobileMenu.classList.toggle("is-open");
+    hamburger.textContent = isOpen ? "✕" : "☰";
+    document.body.classList.toggle("no-scroll", isOpen);
+  });
 }
-
+  
 });
 
