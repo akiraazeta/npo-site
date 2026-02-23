@@ -1,22 +1,22 @@
-.page-header {
+.contact-hero {
   text-align: center;
   padding: 80px 20px 40px;
 }
 
-.page-header h1 {
+.contact-hero h1 {
   font-size: 32px;
   margin-bottom: 16px;
 }
 
-.subtitle {
+.contact-hero p {
   color: #777;
 }
 
 .contact-intro {
   text-align: center;
-  padding: 40px 20px;
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
+  padding: 40px 20px;
   line-height: 1.8;
 }
 
@@ -29,18 +29,22 @@
 }
 
 .method-card {
-  background: #fff;
+  background: #ffffff;
   border-radius: 24px;
-  padding: 32px;
-  width: 280px;
+  padding: 40px 32px;
+  width: 300px;
   text-align: center;
   box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .method-card img {
-  width: 160px;
-  margin: 20px 0;
-  border-radius: 16px;
+  width: 180px;
+  margin: 24px 0;
+  display: block;
 }
 
 .hours {
@@ -49,14 +53,35 @@
   margin-top: 12px;
 }
 
+.mail-address {
+  font-size: 18px;
+  margin: 24px 0 12px;
+  word-break: break-all;
+}
+
+.mail-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #f4c6c6;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
 .contact-form-section {
-  padding: 80px 20px;
   background: #faf8f7;
+  padding: 80px 20px;
+}
+
+.contact-form-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .contact-form {
   max-width: 600px;
-  margin: 40px auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -83,6 +108,7 @@
   text-align: center;
   font-size: 14px;
   color: #777;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
