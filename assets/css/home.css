@@ -1,29 +1,32 @@
 /* =====================
-   Base
+   Hero
 ===================== */
 
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   background: linear-gradient(
     180deg,
-    #f8e9ef 0%,
+    #f8e6ee 0%,
     #fafaf7 70%
   );
-  text-align: center;
+  padding: 0 20px;
 }
 
-.hero-main {
-  font-size: 2.2rem;
+.hero-catch {
+  font-size: 2.4rem;
   font-weight: 600;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
-.hero-lead {
+.hero-sub {
   font-size: 1.05rem;
   color: var(--color-sub);
-  margin-bottom: 40px;
+  margin-bottom: 48px;
+  line-height: 1.8;
 }
 
 .hero-buttons {
@@ -39,98 +42,80 @@
 
 .btn {
   display: inline-block;
-  padding: 14px 28px;
-  border-radius: 28px;
+  padding: 14px 32px;
+  border-radius: 30px;
   text-decoration: none;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
 }
 
 .btn.primary {
-  background: #e8b7c8;
+  background: #e6a6c1;
   color: #fff;
 }
 
 .btn.primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.08);
 }
 
 .btn.ghost {
-  border: 1px solid #e8b7c8;
+  border: 1px solid #e6a6c1;
   color: #c07a94;
 }
 
-.btn.large {
-  margin-top: 32px;
-}
-
 /* =====================
-   Seats
+   Empathy
 ===================== */
 
-.seats {
-  background: #fff;
+.empathy {
+  background: #ffffff;
+  padding: 100px 20px;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 56px;
   font-size: 1.6rem;
 }
 
-.seat-grid {
+.empathy-grid {
   display: flex;
   gap: 24px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.seat-card {
-  background: #fff0f5;
-  border-radius: 20px;
-  padding: 32px;
+.empathy-card {
+  background: #fff2f7;
+  border-radius: 24px;
+  padding: 28px 32px;
   width: 260px;
   text-align: center;
+  font-size: 0.95rem;
   transition: 0.3s ease;
 }
 
-.seat-card:hover {
+.empathy-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
-}
-
-.seat-card h3 {
-  margin-bottom: 16px;
-  font-size: 1.1rem;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.05);
 }
 
 /* =====================
-   About
+   Concept
 ===================== */
 
-.about {
-  background: #fdf6f8;
+.concept {
+  background: #fdf4f8;
+  padding: 100px 20px;
+  text-align: center;
 }
 
-.about-inner {
-  display: flex;
-  gap: 48px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.about-text {
-  flex: 1 1 320px;
-}
-
-.about-image {
-  flex: 1 1 240px;
-}
-
-.about-image img {
-  border-radius: 24px;
-  width: 100%;
+.concept p {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
 }
 
 /* =====================
@@ -140,16 +125,16 @@
 .final {
   background: linear-gradient(
     180deg,
-    #fdf6f8 0%,
-    #f8e9ef 100%
+    #fdf4f8 0%,
+    #f8e6ee 100%
   );
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
 }
 
 .final h2 {
   font-size: 1.8rem;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 /* =====================
@@ -158,12 +143,12 @@
 
 @media (max-width: 768px) {
 
-  .hero-main {
-    font-size: 1.6rem;
+  .hero-catch {
+    font-size: 1.8rem;
   }
 
-  .about-inner {
-    gap: 32px;
+  .empathy-grid {
+    gap: 16px;
   }
 
 }
