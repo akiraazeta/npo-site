@@ -2,85 +2,104 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>居場所カフェ</title>
+  <title>居場所カフェ 花hana</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/home.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
-<header class="navbar">
-  <div class="logo">居場所カフェ</div>
-  <nav>
-    <ul>
-      <li><a href="#">居場所について</a></li>
-      <li><a href="#">活動内容</a></li>
-      <li><a href="#">メンバー募集</a></li>
-      <li><a href="#">お問い合わせ</a></li>
-    </ul>
-  </nav>
-</header>
-
-<section class="hero">
-  <div class="hero-text">
-    <h1>ここは、<br>無理をしなくていい場所。</h1>
-    <p>
-      学校がしんどい日も、家に居場所がないと感じる日も。<br>
-      ただ「いる」だけでいい、そんな空間をつくります。
-    </p>
-    <div class="buttons">
-      <a href="#" class="btn primary">☕ ちょっと見てみる</a>
-      <a href="#" class="btn secondary">🪑 居場所について</a>
+  <!-- ===== Header / Nav（既存と統一想定）===== -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <div class="nav-logo">居場所カフェ 花hana</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<section class="seats">
-  <h2>今日の席、空いています。</h2>
-  <div class="seat-cards">
-    <div class="card">
-      <h3>ひとり席</h3>
-      <p>静かに過ごしたい日。<br>何も話さなくても大丈夫。</p>
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1 class="hero-main">
+        ここは、<br>
+        無理をしなくていい場所。
+      </h1>
+      <p class="hero-lead">
+        居場所カフェ 花hana は、<br>
+        18歳未満の子どもたちのための<br>
+        “安心できる居場所”をつくる団体です。
+      </p>
+      <div class="hero-buttons">
+        <a href="#seats" class="btn primary">☕ 席を見てみる</a>
+        <a href="#about" class="btn ghost">花hanaについて</a>
+      </div>
     </div>
-    <div class="card">
-      <h3>テーブル席</h3>
-      <p>誰かと少し話したい。<br>同じ目線でゆっくり。</p>
+  </section>
+
+  <!-- ===== Seats ===== -->
+  <section id="seats" class="seats">
+    <div class="container">
+      <h2 class="section-title">今日の席、空いてます。</h2>
+
+      <div class="seat-grid">
+
+        <div class="seat-card">
+          <h3>ひとり席</h3>
+          <p>静かに過ごしたい日もある。<br>何も話さなくてもいい席。</p>
+        </div>
+
+        <div class="seat-card">
+          <h3>テーブル席</h3>
+          <p>誰かと少し話したい。<br>そんなときに座れる場所。</p>
+        </div>
+
+        <div class="seat-card">
+          <h3>カウンター席</h3>
+          <p>ちょっと聞いてほしい。<br>そんな気持ちを置いていける席。</p>
+        </div>
+
+      </div>
     </div>
-    <div class="card">
-      <h3>カウンター席</h3>
-      <p>ちょっと相談したい。<br>気軽に声をかけてください。</p>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2 class="section-title">このカフェをつくっている人</h2>
+        <p>
+          花hanaは、高校生が代表をつとめる団体です。<br>
+          上から支えるのではなく、同じ目線で。
+        </p>
+        <p>
+          まだ物理的な居場所は準備中ですが、<br>
+          本気で“安心できる場所”をつくろうとしています。
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="assets/cafe.jpg" alt="居場所カフェのイメージ">
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="about">
-  <div class="about-inner">
-    <h2>私たちがつくる居場所</h2>
-    <p>
-      居場所カフェは、18歳未満の子どもたちのための居場所です。<br>
-      悩み相談もできますが、いちばん大切にしているのは<br>
-      「ここにいていい」と思える空気をつくること。
-    </p>
-  </div>
-</section>
-
-<section class="message">
-  <h2>このカフェをつくっている人</h2>
-  <p>
-    代表も高校生です。<br>
-    同じ目線で、無理のない距離で、<br>
-    ちゃんと居場所をつくりたいと思っています。
-  </p>
-</section>
-
-<section class="cta">
-  <h2>ひとりで来てもいい。<br>何も話さなくてもいい。</h2>
-  <a href="#" class="btn primary large">☕ ふらっと入ってみる</a>
-</section>
-
-<footer>
-  <p>© 2026 居場所カフェ</p>
-</footer>
+  <!-- ===== Final CTA ===== -->
+  <section class="final">
+    <div class="container">
+      <h2>
+        ひとりで来てもいい。<br>
+        何も話さなくてもいい。
+      </h2>
+      <a href="contact.html" class="btn primary large">
+        ☕ ふらっと入ってみる
+      </a>
+    </div>
+  </section>
 
 </body>
 </html>
