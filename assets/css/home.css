@@ -1,0 +1,49 @@
+/* =====================
+   Home Hero
+===================== */
+
+.home-hero {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.home-lead {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* =====================
+   Sections
+===================== */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.home-about,
+.home-activity {
+  text-align: center;
+}
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 24px;
+}
+
+.activity-list li {
+  margin-bottom: 12px;
+}
