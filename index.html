@@ -2,45 +2,85 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+
   <title>居場所カフェ 花hana</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="common.css">
-  <link rel="stylesheet" href="home.css">
+
+  <meta name="description" content="居場所カフェ 花hana は、安心できる居場所をつくる団体です。">
+
+  <!-- OGP -->
+  <meta property="og:title" content="居場所カフェ 花hana">
+  <meta property="og:description" content="無理をしなくていい場所。居場所カフェ 花hana のホームページです。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://akiraazeta.github.io/npo-site/">
+  <meta property="og:image" content="https://akiraazeta.github.io/npo-site/assets/images/logo.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/home.css">
 </head>
+
 <body>
 
-  <!-- ===== Header / Nav（既存と統一想定）===== -->
-  <header class="site-header">
-    <div class="container nav-inner">
-      <div class="nav-logo">居場所カフェ 花hana</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="join.html">Join</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="site-header">
+  <div class="header-inner">
+
+    <a href="./" class="header-brand">
+      <img src="assets/images/logo.png" alt="居場所カフェ 花hana ロゴ" class="header-logo">
+      <div class="header-text">
+        <span class="header-name">居場所カフェ</span>
+        <span class="header-title">花hana</span>
+      </div>
+    </a>
+
+    <nav class="header-nav">
+      <a href="contact/">相談・お問い合わせ</a>
+      <a href="info/">お知らせ</a>
+      <a href="about/">私たちについて</a>
+      <a href="parents/">保護者の方へ</a>
+    </nav>
+
+    <button class="hamburger" aria-label="メニューを開く">☰</button>
+    
+  </div>
+</header>
+
+<div class="mobile-menu">
+  <nav class="mobile-menu-nav">
+    <a href="./">ホーム</a>
+    <a href="contact/">相談・お問い合わせ</a>
+    <a href="info/">お知らせ</a>
+    <a href="about/">私たちについて</a>
+    <a href="parents/">保護者の方へ</a>
+  </nav>
+</div>
+
+
+<main>
 
   <!-- ===== Hero ===== -->
   <section class="hero">
-    <div class="container hero-inner">
+    <div class="hero-inner">
       <h1 class="hero-main">
         ここは、<br>
         無理をしなくていい場所。
       </h1>
       <p class="hero-lead">
-        居場所カフェ 花hana は、<br>
         18歳未満の子どもたちのための<br>
-        “安心できる居場所”をつくる団体です。
+        “居場所カフェ”です。
       </p>
+
       <div class="hero-buttons">
         <a href="#seats" class="btn primary">☕ 席を見てみる</a>
-        <a href="#about" class="btn ghost">花hanaについて</a>
+        <a href="about/" class="btn ghost">私たちについて</a>
       </div>
     </div>
   </section>
+
 
   <!-- ===== Seats ===== -->
   <section id="seats" class="seats">
@@ -56,7 +96,7 @@
 
         <div class="seat-card">
           <h3>テーブル席</h3>
-          <p>誰かと少し話したい。<br>そんなときに座れる場所。</p>
+          <p>少し話したい日もある。<br>安心して座れる場所。</p>
         </div>
 
         <div class="seat-card">
@@ -68,25 +108,18 @@
     </div>
   </section>
 
-  <!-- ===== About ===== -->
-  <section id="about" class="about">
-    <div class="container about-inner">
-      <div class="about-text">
-        <h2 class="section-title">このカフェをつくっている人</h2>
-        <p>
-          花hanaは、高校生が代表をつとめる団体です。<br>
-          上から支えるのではなく、同じ目線で。
-        </p>
-        <p>
-          まだ物理的な居場所は準備中ですが、<br>
-          本気で“安心できる場所”をつくろうとしています。
-        </p>
-      </div>
-      <div class="about-image">
-        <img src="assets/cafe.jpg" alt="居場所カフェのイメージ">
-      </div>
+
+  <!-- ===== Concept ===== -->
+  <section class="concept">
+    <div class="container concept-inner">
+      <h2 class="section-title">花hanaが目指すもの</h2>
+      <p>
+        ここは、答えを押しつける場所ではありません。<br>
+        気持ちを置いていける場所でありたいと考えています。
+      </p>
     </div>
   </section>
+
 
   <!-- ===== Final CTA ===== -->
   <section class="final">
@@ -95,11 +128,15 @@
         ひとりで来てもいい。<br>
         何も話さなくてもいい。
       </h2>
-      <a href="contact.html" class="btn primary large">
+      <a href="contact/" class="btn primary large">
         ☕ ふらっと入ってみる
       </a>
     </div>
   </section>
+
+</main>
+
+<script src="assets/js/common.js"></script>
 
 </body>
 </html>
