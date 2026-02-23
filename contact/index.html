@@ -2,28 +2,82 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+
   <title>相談・お問い合わせ | 居場所カフェ 花hana</title>
-  <link rel="stylesheet" href="../assets/css/common.css">
-<link rel="stylesheet" href="../assets/css/contact.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/images/logo.png" type="image/png">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta -->
+  <meta name="description" content="居場所カフェ 花hana へのご相談・お問い合わせはこちらから。LINE・Instagram・メール・フォームにて受け付けています。">
+
+  <!-- OGP -->
+  <meta property="og:title" content="相談・お問い合わせ | 居場所カフェ 花hana">
+  <meta property="og:description" content="居場所カフェ 花hana へのご相談・お問い合わせはこちらから。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://akiraazeta.github.io/npo-site/contact/">
+  <meta property="og:image" content="https://akiraazeta.github.io/npo-site/assets/images/logo.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/contact.css">
 </head>
 
 <body>
 
-<header class="page-header">
-  <h1>相談・お問い合わせ</h1>
-  <p class="subtitle">どんなご相談でも、まずはご連絡ください。</p>
+<header class="site-header">
+  <div class="header-inner">
+
+    <a href="../" class="header-brand">
+      <img src="../assets/images/logo.png" alt="居場所カフェ 花hana ロゴ" class="header-logo">
+      <div class="header-text">
+        <span class="header-name">居場所カフェ</span>
+        <span class="header-title">花hana</span>
+      </div>
+    </a>
+
+    <nav class="header-nav">
+      <a href="../contact/" class="active">相談・お問い合わせ</a>
+      <a href="../info/">お知らせ</a>
+      <a href="../about/">私たちについて</a>
+      <a href="../parents/">保護者の方へ</a>
+    </nav>
+
+    <button class="hamburger" aria-label="メニューを開く">☰</button>
+
+  </div>
 </header>
+
+<div class="mobile-menu">
+  <nav class="mobile-menu-nav">
+    <a href="../">ホーム</a>
+    <a href="../contact/">相談・お問い合わせ</a>
+    <a href="../info/">お知らせ</a>
+    <a href="../about/">私たちについて</a>
+    <a href="../parents/">保護者の方へ</a>
+  </nav>
+</div>
+
+<main>
+
+<section class="contact-hero">
+  <div class="container">
+    <h1>相談・お問い合わせ</h1>
+    <p>どんな形でも、大丈夫です。</p>
+  </div>
+</section>
 
 <section class="contact-intro">
   <div class="container">
     <p>
-      居場所カフェ 花hanaでは、不登校や学校に行きづらさを感じている方、
-      保護者の方からのご相談も受け付けています。
+      不登校や学校に行きづらさを感じている方、
+      保護者の方からのご相談を受け付けています。
     </p>
     <p>
-      もちろん、ただ話を聞いてほしいという方も歓迎しています。
-      あなたのペースで大丈夫です。
+      もちろん、「少し話を聞いてほしい」だけでも大丈夫です。
+      あなたのペースでご連絡ください。
     </p>
   </div>
 </section>
@@ -34,7 +88,7 @@
     <!-- LINE -->
     <div class="method-card">
       <h3>LINE</h3>
-      <a href="https://line.me/R/ti/p/@414wrxlr" target="_blank">
+      <a href="※LPのLINE追加URLをここに貼る" target="_blank">
         <img src="../assets/images/line-qr.png" alt="LINE QRコード">
       </a>
       <p>一番気軽に相談できます。</p>
@@ -44,21 +98,24 @@
     <!-- Instagram -->
     <div class="method-card">
       <h3>Instagram</h3>
-      <a href="https://www.instagram.com/hanahana.cafe_/" target="_blank">
+      <a href="※LPのInstagramURLをここに貼る" target="_blank">
         <img src="../assets/images/instagram-qr.png" alt="Instagram QRコード">
       </a>
-      <p>DMでも大丈夫です。</p>
+      <p>DMでもご相談いただけます。</p>
       <p class="hours">対応時間：平日 16:00〜20:00</p>
     </div>
 
     <!-- メール -->
     <div class="method-card">
       <h3>メール</h3>
-      <a href="mailto:hanaka.ishidaira@outlook.com">
-        <img src="../assets/images/mail-icon.png" alt="メール">
-      </a>
-      <p>少し整理して書きたい方に。</p>
-      <p class="hours">対応時間：2〜3日以内に返信します。</p>
+      <div class="mail-box">
+        <p class="mail-address">example@gmail.com</p>
+        <a href="mailto:example@gmail.com" class="mail-button">
+          メールを作成する
+        </a>
+      </div>
+      <p>内容を整理して送りたい方に。</p>
+      <p class="hours">2〜3日以内に返信いたします。</p>
     </div>
 
   </div>
@@ -68,7 +125,7 @@
   <div class="container">
     <h2>お問い合わせフォーム</h2>
 
-    <form class="contact-form">
+    <form class="contact-form" method="post" action="#">
       <label>
         お名前（ニックネーム可）
         <input type="text" name="name" required>
@@ -92,6 +149,10 @@
     </p>
   </div>
 </section>
+
+</main>
+
+<script src="../assets/js/main.js"></script>
 
 </body>
 </html>
