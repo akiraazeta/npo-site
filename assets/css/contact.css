@@ -1,1 +1,93 @@
+.page-header {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
 
+.page-header h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  color: #777;
+}
+
+.contact-intro {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.methods-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+}
+
+.method-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 32px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+}
+
+.method-card img {
+  width: 160px;
+  margin: 20px 0;
+  border-radius: 16px;
+}
+
+.hours {
+  font-size: 14px;
+  color: #888;
+  margin-top: 12px;
+}
+
+.contact-form-section {
+  padding: 80px 20px;
+  background: #faf8f7;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 16px;
+  border: none;
+  border-radius: 30px;
+  background: #f4c6c6;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.privacy-note {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .methods-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
