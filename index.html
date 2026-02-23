@@ -1,79 +1,86 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ここにいていい</title>
-
-  <link rel="stylesheet" href="assets/css/common.css" />
-  <link rel="stylesheet" href="assets/css/home.css" />
+  <meta charset="UTF-8">
+  <title>居場所カフェ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="header">
-  <div class="header-inner">
-    <div class="header-brand">NPO NAME</div>
-
-    <nav class="header-nav">
-      <a href="index.html">ホーム</a>
-      <a href="contact.html">相談する</a>
-      <a href="guardians.html">大人の方へ</a>
-    </nav>
-
-    <button class="hamburger">☰</button>
-  </div>
+<header class="navbar">
+  <div class="logo">居場所カフェ</div>
+  <nav>
+    <ul>
+      <li><a href="#">居場所について</a></li>
+      <li><a href="#">活動内容</a></li>
+      <li><a href="#">メンバー募集</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+  </nav>
 </header>
 
-<div class="mobile-menu">
-  <nav class="mobile-menu-nav">
-    <a href="index.html">ホーム</a>
-    <a href="contact.html">相談する</a>
-    <a href="guardians.html">大人の方へ</a>
-  </nav>
-</div>
-
-<main>
-
-  <!-- Hero -->
-  <section class="home-hero">
-    <div class="home-hero-inner">
-      <h1 class="home-title">ここにいていい。</h1>
-      <p class="home-lead">
-        安心して過ごせる場所を、つくっています。
-      </p>
-
-      <div class="home-buttons">
-        <a href="contact.html" class="btn-primary">相談してみる</a>
-        <a href="#about" class="btn-secondary">どんな場所？</a>
-      </div>
+<section class="hero">
+  <div class="hero-text">
+    <h1>ここは、<br>無理をしなくていい場所。</h1>
+    <p>
+      学校がしんどい日も、家に居場所がないと感じる日も。<br>
+      ただ「いる」だけでいい、そんな空間をつくります。
+    </p>
+    <div class="buttons">
+      <a href="#" class="btn primary">☕ ちょっと見てみる</a>
+      <a href="#" class="btn secondary">🪑 居場所について</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- About -->
-  <section id="about" class="home-about">
-    <div class="container">
-      <h2>わたしたちについて</h2>
-      <p>
-        居場所がないと感じる子どもたちのために、
-        安心できる空間をつくっています。
-      </p>
+<section class="seats">
+  <h2>今日の席、空いています。</h2>
+  <div class="seat-cards">
+    <div class="card">
+      <h3>ひとり席</h3>
+      <p>静かに過ごしたい日。<br>何も話さなくても大丈夫。</p>
     </div>
-  </section>
-
-  <!-- What we do -->
-  <section class="home-activity">
-    <div class="container">
-      <h2>今できること</h2>
-      <ul class="activity-list">
-        <li>オンライン相談</li>
-        <li>居場所づくり（準備中）</li>
-        <li>メンバー募集</li>
-      </ul>
+    <div class="card">
+      <h3>テーブル席</h3>
+      <p>誰かと少し話したい。<br>同じ目線でゆっくり。</p>
     </div>
-  </section>
+    <div class="card">
+      <h3>カウンター席</h3>
+      <p>ちょっと相談したい。<br>気軽に声をかけてください。</p>
+    </div>
+  </div>
+</section>
 
-</main>
+<section class="about">
+  <div class="about-inner">
+    <h2>私たちがつくる居場所</h2>
+    <p>
+      居場所カフェは、18歳未満の子どもたちのための居場所です。<br>
+      悩み相談もできますが、いちばん大切にしているのは<br>
+      「ここにいていい」と思える空気をつくること。
+    </p>
+  </div>
+</section>
 
-<script src="assets/js/common.js"></script>
+<section class="message">
+  <h2>このカフェをつくっている人</h2>
+  <p>
+    代表も高校生です。<br>
+    同じ目線で、無理のない距離で、<br>
+    ちゃんと居場所をつくりたいと思っています。
+  </p>
+</section>
+
+<section class="cta">
+  <h2>ひとりで来てもいい。<br>何も話さなくてもいい。</h2>
+  <a href="#" class="btn primary large">☕ ふらっと入ってみる</a>
+</section>
+
+<footer>
+  <p>© 2026 居場所カフェ</p>
+</footer>
+
 </body>
 </html>
