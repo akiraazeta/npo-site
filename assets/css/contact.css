@@ -59,8 +59,8 @@
 .mail-address {
   font-size: 18px;
   margin: 24px 0 12px;
-  word-break: normal;
-  overflow-wrap: anywhere;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 .mail-button {
