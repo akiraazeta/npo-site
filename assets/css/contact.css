@@ -21,11 +21,16 @@
 }
 
 .methods-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  justify-content: center;
-  flex-wrap: wrap;
   padding: 60px 20px;
+}
+
+@media (max-width: 900px) {
+  .methods-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .method-card {
@@ -37,11 +42,9 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
 
-  width: 320px;      
-  height: 520px;     
+  height: 520px;
 }
 
 .method-card img {
