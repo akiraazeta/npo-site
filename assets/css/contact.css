@@ -48,9 +48,8 @@
 }
 
 .method-card img {
-  width: 180px;
-  margin: 24px 0;
   display: block;
+  margin: 24px auto;
 }
 
 .hours {
@@ -127,9 +126,3 @@
   margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-  .methods-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-}
