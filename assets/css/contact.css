@@ -20,6 +20,12 @@
   line-height: 1.8;
 }
 
+.contact-note {
+  font-size: 0.9rem;
+  color: var(--color-sub);
+  margin-top: 12px;
+}
+
 .methods-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
