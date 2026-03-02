@@ -1,166 +1,104 @@
-/* =========================
-   Parents Page
-========================= */
-
-/* 全体 */
-.parents {
-  padding-top: 120px; /* 固定ヘッダー分 */
-  padding-bottom: 120px;
-  background: #fafafa;
-}
-
-/* セクション共通 */
-.parents-section {
-  max-width: 1000px;
-  margin: 0 auto 120px auto;
-  padding: 0 24px;
-}
-
-.parents-section h2 {
-  font-size: 32px;
-  margin-bottom: 32px;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
-.parents-section p {
-  font-size: 16px;
-  line-height: 1.9;
-  color: #444;
-  margin-bottom: 20px;
-}
-
-/* =========================
-   Hero
-========================= */
+/* =====================
+   Parents Hero
+===================== */
 
 .parents-hero {
   text-align: center;
-  margin-bottom: 140px;
+  padding: 160px 20px 120px;
 }
 
 .parents-hero h1 {
-  font-size: 40px;
-  margin-bottom: 24px;
-}
-
-.parents-hero p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #555;
-}
-
-/* =========================
-   安心ポイントカード
-========================= */
-
-.parents-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  margin-top: 40px;
-}
-
-.parents-card {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 40px 28px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
-  text-align: center;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.parents-card h3 {
-  font-size: 20px;
+  font-size: 2.2rem;
   margin-bottom: 16px;
 }
 
-.parents-card p {
-  font-size: 15px;
-  line-height: 1.8;
-  color: #555;
+.parents-hero p {
+  font-size: 1rem;
+  color: var(--color-sub);
 }
 
-/* =========================
-   運営方針ボックス
-========================= */
+/* =====================
+   Message Section
+===================== */
 
-.policy-box {
-  background: #ffffff;
-  padding: 50px 40px;
-  border-radius: 24px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.05);
-  margin-top: 40px;
+.parents-message {
+  background: var(--bg-accent);
+  padding: 100px 20px;
 }
 
-.policy-box ul {
-  margin-top: 20px;
+.parents-message .section-inner {
+  max-width: 760px;
+}
+
+.parents-message p {
+  margin-bottom: 20px;
+}
+
+/* =====================
+   Values
+===================== */
+
+.parents-values {
+  padding: 120px 20px;
+}
+
+.value-item {
+  max-width: 760px;
+  margin: 0 auto 60px;
+}
+
+.value-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 16px;
+}
+
+.value-item h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 6px;
+  height: 20px;
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+.value-item p {
+  color: var(--color-sub);
+}
+
+/* =====================
+   Promise
+===================== */
+
+.parents-promise {
+  background: #fff;
+  padding: 120px 20px;
+  border-top: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.parents-promise ul {
+  max-width: 760px;
+  margin: 0 auto;
   padding-left: 20px;
 }
 
-.policy-box li {
-  margin-bottom: 12px;
-  line-height: 1.8;
-  color: #444;
+.parents-promise li {
+  margin-bottom: 16px;
 }
 
-/* =========================
+/* =====================
    CTA
-========================= */
+===================== */
 
 .parents-cta {
   text-align: center;
-  margin-top: 100px;
+  padding: 120px 20px;
 }
 
 .parents-cta p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.parents-cta a {
-  display: inline-block;
-  padding: 16px 40px;
-  background: #111;
-  color: #fff;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.parents-cta a:hover {
-  opacity: 0.8;
-}
-
-/* =========================
-   Responsive
-========================= */
-
-@media (max-width: 1000px) {
-  .parents-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 700px) {
-
-  .parents-hero h1 {
-    font-size: 30px;
-  }
-
-  .parents-section h2 {
-    font-size: 24px;
-  }
-
-  .parents-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .policy-box {
-    padding: 30px 24px;
-  }
-
+  margin-bottom: 32px;
 }
