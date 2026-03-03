@@ -60,21 +60,30 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  /* =====================
-     Info Slide Toggle
-  ===================== */
+/* =====================
+   Info Slide Toggle
+===================== */
 
-  document.querySelectorAll(".info-card").forEach(card => {
-    const button = card.querySelector(".info-summary");
-    const body = card.querySelector(".info-body");
-    if (!button || !body) return;
+document.addEventListener("click", function(e) {
+  const summary = e.target.closest(".info-summary");
+  if (!summary) return;
 
-    button.addEventListener("click", () => {
-      const isOpen = card.classList.contains("is-open");
-      body.style.height = isOpen ? "0" : body.scrollHeight + "px";
-      card.classList.toggle("is-open");
+  const card = summary.closest(".info-card");
+  const body = summary.nextElementSibling;
+
+  const isOpen = card.classList.contains("is-open");
+
+  if (isOpen) {
+    body.style.height = body.scrollHeight + "px";
+    requestAnimationFrame(() => {
+      body.style.height = "0px";
     });
-  });
+  } else {
+    body.style.height = body.scrollHeight + "px";
+  }
+
+  card.classList.toggle("is-open");
+});
 
   /* =====================
    Mobile Menu Toggle
