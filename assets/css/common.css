@@ -29,6 +29,20 @@ img {
   display: block;
 }
 
+.page-hero {
+  text-align: center;
+  padding: 120px 20px 80px;
+}
+
+.page-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.page-hero p {
+  color: var(--color-sub);
+}
+
 /* =====================
    Layout
 ===================== */
