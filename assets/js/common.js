@@ -59,10 +59,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-
-/* =====================
-   Info Slide Toggle
+  /* =====================
+   Mobile Menu Toggle
 ===================== */
+
+const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+if (hamburger && mobileMenu) {
+  hamburger.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.toggle("is-open");
+    hamburger.textContent = isOpen ? "✕" : "☰";
+    document.body.classList.toggle("no-scroll", isOpen);
+  });
+}
+  
+});
 
 document.addEventListener("click", function(e) {
   const summary = e.target.closest(".info-summary");
@@ -84,21 +96,3 @@ document.addEventListener("click", function(e) {
 
   card.classList.toggle("is-open");
 });
-
-  /* =====================
-   Mobile Menu Toggle
-===================== */
-
-const hamburger = document.querySelector(".hamburger");
-const mobileMenu = document.querySelector(".mobile-menu");
-
-if (hamburger && mobileMenu) {
-  hamburger.addEventListener("click", () => {
-    const isOpen = mobileMenu.classList.toggle("is-open");
-    hamburger.textContent = isOpen ? "✕" : "☰";
-    document.body.classList.toggle("no-scroll", isOpen);
-  });
-}
-  
-});
-
