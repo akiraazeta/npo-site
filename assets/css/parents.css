@@ -1,23 +1,4 @@
 /* =====================
-   Parents Hero
-===================== */
-
-.parents-hero {
-  text-align: center;
-  padding: 160px 20px 120px;
-}
-
-.parents-hero h1 {
-  font-size: 2.2rem;
-  margin-bottom: 16px;
-}
-
-.parents-hero p {
-  font-size: 1rem;
-  color: var(--color-sub);
-}
-
-/* =====================
    Message Section
 ===================== */
 
