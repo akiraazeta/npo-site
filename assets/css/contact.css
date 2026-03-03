@@ -36,7 +36,13 @@
   padding: 60px 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+  .methods-grid {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
   .methods-grid {
     grid-template-columns: 1fr;
   }
