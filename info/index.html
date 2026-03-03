@@ -60,40 +60,45 @@
 </div>
     
   <main class="info">
-    <h1>お知らせ</h1>
-
-<div class="info-card">
-  <button class="info-summary">
-    <div class="info-header">
-      <span class="info-title">テストメッセージ</span>
-      <span class="info-date">2025.12.31</span>
-    </div>
-  </button>
-
-  <div class="info-body">
-    <p>テスト</p>
-  </div>
-</div>
-    
-<div class="info-card">
-  <button class="info-summary">
-    <div class="info-header">
-      <span class="info-title">📅今月の活動日</span>
-      <span class="info-date">2025.3.15</span>
-    </div>
-  </button>
-
-      <div class="info-body">
-        <p>
-          3/20(木)、3/27(木)にオンライン相談を行います。<br>
-          LINEからご連絡ください。
-        </p>
-      </div>
-    </details>
-
-  </main>
-
+  <h1>お知らせ</h1>
+  <div id="news-container"></div>
+</main>
+  
 <script src="../assets/js/common.js"></script>
+
+<script>
+const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSScinU0ySTH8kf-8pa0rlTDS-7hvP_IaLFvTSFYOg6fNmtbgSG2VMlT1dcgWsgjzDFkbnEku1hmf6i/pub?output=csv";
+
+fetch(sheetURL)
+  .then(response => response.text())
+  .then(csvText => {
+    const rows = csvText.split("\n").slice(1); // 1行目はヘッダーなので除外
+    const container = document.getElementById("news-container");
+
+    rows.reverse().forEach(row => {
+      if (!row.trim()) return;
+
+      const [date, title, body] = row.split(",");
+
+      const card = document.createElement("div");
+      card.className = "info-card";
+
+      card.innerHTML = `
+        <button class="info-summary">
+          <div class="info-header">
+            <span class="info-title">${title}</span>
+            <span class="info-date">${date}</span>
+          </div>
+        </button>
+        <div class="info-body">
+          <p>${body.replace(/\\n/g, "<br>")}</p>
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
+  });
+</script>
 
 </body>
 </html>
