@@ -25,8 +25,14 @@
 }
 
 .info-title {
-  font-size: 20px;
-　font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .info-title {
+    font-size: 20px;
+  }
 }
 
 .info-date {
